@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Projects &amp; Contact | 786 Surveillance Solution (SMC-PVT) LTD</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "tertiary-fixed": "#c4e7ff",
+            "secondary": "#bec5e5",
+            "primary-container": "#0ea5e9",
+            "secondary-fixed-dim": "#bec5e5",
+            "outline": "#88929b",
+            "background": "#031427",
+            "tertiary-container": "#00a7e0",
+            "on-primary": "#00344d",
+            "primary-fixed": "#c9e6ff",
+            "tertiary-fixed-dim": "#7bd0ff",
+            "primary-fixed-dim": "#89ceff",
+            "error": "#ffb4ab",
+            "surface-container-highest": "#26364a",
+            "on-error": "#690005",
+            "tertiary": "#7bd0ff",
+            "on-primary-container": "#003751",
+            "surface-variant": "#26364a",
+            "surface": "#031427",
+            "on-secondary": "#282f49",
+            "on-tertiary": "#00354a",
+            "on-tertiary-fixed-variant": "#004c69",
+            "error-container": "#93000a",
+            "inverse-primary": "#006591",
+            "on-secondary-container": "#b0b7d7",
+            "surface-bright": "#2a3a4f",
+            "on-tertiary-fixed": "#001e2c",
+            "surface-tint": "#89ceff",
+            "surface-container-low": "#0b1c30",
+            "on-tertiary-container": "#00384e",
+            "on-primary-fixed": "#001e2f",
+            "on-error-container": "#ffdad6",
+            "surface-container": "#102034",
+            "on-surface-variant": "#bec8d2",
+            "on-surface": "#d3e4fe",
+            "on-secondary-fixed-variant": "#3e4660",
+            "inverse-surface": "#d3e4fe",
+            "on-secondary-fixed": "#131a33",
+            "outline-variant": "#3e4850",
+            "secondary-container": "#414863",
+            "on-background": "#d3e4fe",
+            "surface-dim": "#031427",
+            "surface-container-lowest": "#000f21",
+            "inverse-on-surface": "#213145",
+            "primary": "#89ceff",
+            "surface-container-high": "#1b2b3f",
+            "secondary-fixed": "#dbe1ff",
+            "on-primary-fixed-variant": "#004c6e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter-lg": "2rem",
+            "gutter-sm": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1rem",
+            "space-md": "1rem",
+            "margin-desktop": "3rem",
+            "margin": "2rem"
+          },
+          "fontFamily": {
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "telemetry-code": ["Inter"],
+            "display-hero-mobile": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "display-hero": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "500" }],
+            "telemetry-code": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .hud-grid-pattern {
+      background-size: 32px 32px;
+      background-image: 
+        linear-gradient(to right, rgba(14, 165, 233, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(14, 165, 233, 0.04) 1px, transparent 1px);
+    }
+    .card-top-light {
+      border-top: 1px solid rgba(56, 189, 248, 0.35);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen relative overflow-x-hidden hud-grid-pattern">
+<!-- TOP DISPATCH & CORPORATE COORDINATES TICKER -->
+<div class="w-full bg-surface-container-lowest border-b border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm relative z-50">
+<div class="max-w-7xl mx-auto px-6 md:px-12 py-2 flex flex-wrap justify-between items-center gap-3">
+<div class="flex items-center gap-6">
+<span class="inline-flex items-center gap-1.5 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-telemetry-code text-telemetry-code uppercase tracking-wider">Lahore NOC Dispatch Active</span>
+</span>
+<span class="hidden md:inline-flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">location_on</span>
+          Office No. 19, Ground Floor, Zam Zam Tower, H3, Johar Town, Lahore
+        </span>
+</div>
+<div class="flex items-center gap-5 text-on-surface font-label-sm">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="tel:+923021151122">
+<span class="material-symbols-outlined text-sm text-primary">call</span>
+<span>Sales: <strong class="font-semibold text-primary-fixed">+92 302 1151122</strong></span>
+</a>
+<span class="text-outline-variant">|</span>
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="tel:+923291141122">
+<span class="material-symbols-outlined text-sm text-primary">support_agent</span>
+<span>Tech Support: <strong class="font-semibold text-primary-fixed">+92 329 1141122</strong></span>
+</a>
+</div>
+</div>
+</div>
+<!-- SHARED COMPONENT: TopNavBar -->
+<header class="bg-surface/90 dark:bg-surface/90 backdrop-blur-md text-primary dark:text-primary docked full-width top-0 sticky z-50 shadow-sm border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-6 md:px-12 max-w-7xl mx-auto h-20">
+<!-- Brand Logo -->
+<a class="flex items-center gap-3" href="#">
+<img alt="786 Surveillance Solution Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WEpySP9yA-bwqrKBZ2XLhy26H8c7OudAcQIzURSelkjhHoNAE8VhoXKmGTzabMZx4QAUIJDDAltCCQZktZNpBnbWmrq5pZrb8M81eEwc851ydcrEozBs4VqLk-zR7la2IaF8Xm3lPH3taPVi5YDgVpMzFkQimIXvfQjWC_HhWB-GMil94EezvPTfWAdzaJ7djxo38FM63TsYZNRZ7ynk79V68Hb4N5GWWYcDSs_hjjhQ"/>
+</a>
+<!-- Web Navigation Links -->
+<nav class="hidden md:flex items-center gap-8 text-label-md font-label-md">
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">Security Solutions</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant font-medium hover:text-primary transition-colors duration-150" href="#">Products</a>
+<a class="text-primary dark:text-primary font-bold border-b-2 border-primary pb-1" href="#">Projects &amp; Contact</a>
+</nav>
+<!-- Action Cluster -->
+<div class="flex items-center gap-3">
+<a class="hidden lg:flex items-center gap-2 px-3 py-2 text-label-sm font-label-sm text-on-surface border border-outline-variant/40 rounded-lg hover:border-primary transition-all duration-150 bg-surface-container-low" href="tel:+923291141122">
+<span class="material-symbols-outlined text-primary text-base">call</span>
+<span>Emergency Dispatch</span>
+</a>
+<a class="flex items-center gap-2 px-4 py-2 text-label-md font-label-md bg-primary-container text-on-primary-container font-semibold rounded-lg hover:brightness-110 shadow-sm transition-all duration-200 active:scale-95" href="#consultation-form">
+<span class="material-symbols-outlined text-base">shield_with_heart</span>
+<span>Request Consultation</span>
+</a>
+</div>
+</div>
+</header>
+<!-- PAGE HERO -->
+<section class="relative pt-16 pb-12 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded bg-surface-container-high border border-outline-variant/50 mb-6">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-telemetry-code text-telemetry-code text-primary uppercase tracking-widest">FIELD TELEMETRY &amp; STRATEGIC ENGAGEMENT</span>
+</div>
+<h1 class="text-headline-xl md:text-display-hero font-headline-xl md:font-display-hero text-on-surface tracking-tight max-w-4xl">
+      Representative Deployments &amp; Engineering Inquiries
+    </h1>
+<p class="mt-4 text-body-lg font-body-lg text-on-surface-variant max-w-3xl leading-relaxed">
+      Explore representative security infrastructure deployments across Pakistan, and schedule your certified on-site security survey in Lahore.
+    </p>
+<!-- Tactical Quick Status Bar -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10 pt-8 border-t border-outline-variant/20">
+<div class="p-4 rounded-lg bg-surface-container-low/70 border border-outline-variant/30">
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Deployment Reach</div>
+<div class="text-headline-md font-headline-md text-primary mt-1">Lahore &amp; Punjab</div>
+<div class="text-telemetry-code font-telemetry-code text-secondary mt-1">Field Fleet On 24/7 Standby</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low/70 border border-outline-variant/30">
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Engineering Spec</div>
+<div class="text-headline-md font-headline-md text-primary mt-1">Tier-3 Standards</div>
+<div class="text-telemetry-code font-telemetry-code text-secondary mt-1">Structured Cat6A / Fiber Optic</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low/70 border border-outline-variant/30">
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Dispatch Center</div>
+<div class="text-headline-md font-headline-md text-primary mt-1">Johar Town HQ</div>
+<div class="text-telemetry-code font-telemetry-code text-secondary mt-1">Zam Zam Tower Technical Desk</div>
+</div>
+<div class="p-4 rounded-lg bg-surface-container-low/70 border border-outline-variant/30">
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase tracking-wider">Response Window</div>
+<div class="text-headline-md font-headline-md text-primary mt-1">&lt; 120 Mins</div>
+<div class="text-telemetry-code font-telemetry-code text-secondary mt-1">On-Site Emergency Assessment</div>
+</div>
+</div>
+</section>
+<!-- REPRESENTATIVE PROJECT PORTFOLIO SECTION -->
+<section class="py-12 px-6 md:px-12 max-w-7xl mx-auto">
+<!-- Notice Demonstration Badge -->
+<div class="p-4 mb-10 rounded-lg bg-surface-container-high/80 border border-primary/30 flex items-start md:items-center gap-3 shadow-sm">
+<span class="material-symbols-outlined text-primary text-xl flex-shrink-0">verified_user</span>
+<p class="font-telemetry-code text-telemetry-code text-on-surface-variant">
+<span class="text-primary font-bold">REPRESENTATIVE DEMONSTRATION ARCHITECTURE</span> — Representative of high-density cabling, server rack assembly, and perimeter defense grids deployed across Punjab.
+      </p>
+</div>
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Mission-Critical Case Studies</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-1">Institutional and industrial installations demonstrating perimeter and network resilience.</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-telemetry-code text-telemetry-code text-primary uppercase bg-surface-container-highest px-3 py-1 rounded">5 Specialized Grid Vectors</span>
+</div>
+</div>
+<!-- Bento Grid Project Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Project 1: Commercial Plaza & Mall Backbone -->
+<article class="bg-surface-container-low/80 backdrop-blur-md rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col card-top-light hover:border-primary/50 transition-all duration-200">
+<div class="relative h-56 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A modern enterprise server room NOC with glowing blue LED racks and multi-display security video wall showing live CCTV surveillance feeds in a nocturnal commercial command room. Ultra-sharp architectural photography with cool blue ambient rim light, deep slate shadows, and high-tech wire management aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4TpRtAdOOZm-YNra6kkV1GQOVvXvZQ3zu06OLPfKoDM_YB-2GeREL1BzmWLVS30kpzE4h8QTEN2sAZBsC9Gt6eKZhtJCfFJRNvlIzh4kZX1plp4LfPVgHIhTbz_jQLbUWH1HMcwPJ0A-gEvAa-YQLuERbdxQsw9waItrLjp3ed-WWOthStfzXJgxnFTAkGcDpL4dRke-Duhml1u4fazCf5Eb0x14WLY2nuUdvyPNL"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 px-2.5 py-1 rounded text-telemetry-code font-telemetry-code text-primary border border-primary/30 uppercase">
+            Lahore Commercial Sector
+          </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-telemetry-code font-telemetry-code text-on-surface-variant">
+            64-CH IP 4K NOC
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Commercial Plaza &amp; Mall Backbone Infrastructure</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+              Comprehensive turnkey digital backbone with centralized video walls, optical fiber riser trunking, and localized recording node isolation.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<div class="text-label-sm font-label-sm text-primary font-semibold uppercase">Hardware Implemented:</div>
+<p class="text-body-sm font-body-sm text-on-surface mt-1">
+              64-Channel 4K IP Network, Dedicated Server Rack NOC, Multi-Display Video Wall, High-Capacity Managed PoE Switches.
+            </p>
+</div>
+</div>
+</article>
+<!-- Project 2: Manufacturing & Industrial Facility Perimeter -->
+<article class="bg-surface-container-low/80 backdrop-blur-md rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col card-top-light hover:border-primary/50 transition-all duration-200">
+<div class="relative h-56 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High-security electric perimeter security fence installed along an industrial facility perimeter under twilight conditions with illuminated warning isolators and dual PTZ thermal surveillance cameras. Clean technical perspective with razor-sharp wire lines, deep nocturnal navy atmosphere, and electric cyan status beacons." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIWe_ANmiQbQ2RTPmb7WBzZRZO0MA8NEIZbbCPTUsJ-J4ylxNLoTzolPOpFPOr1DugUc5eudyURBql1O-0DkNHVinFsNMaCZGrXy9pF0smdBlAiHY6tFbuX-bFC2ZseU9bxUCY0BwDo-nn4Q7W0JE6qtjVvjbrhuBP-CMVjaAQuF2dA8dDNSEZzj86TInN2w1lDh7v4Rk_3HN5yxkNiMp3aQSCGyX4H2m5u7Y_TRpz"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 px-2.5 py-1 rounded text-telemetry-code font-telemetry-code text-primary border border-primary/30 uppercase">
+            Sundar Industrial Estate
+          </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-telemetry-code font-telemetry-code text-on-surface-variant">
+            1.2 KM High-Voltage Grid
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Manufacturing &amp; Industrial Facility Perimeter Energizer</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+              Active perimeter defense barrier featuring pulsed non-lethal deterrents, physical intrusion cut detection, and PTZ auto-slew triggers.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<div class="text-label-sm font-label-sm text-primary font-semibold uppercase">Hardware Implemented:</div>
+<p class="text-body-sm font-body-sm text-on-surface mt-1">
+              1.2 km Continuous High-Voltage Pulsed Electric Fence, Tamper Siren, PTZ Thermal Tripwires, Redundant Energizer Banks.
+            </p>
+</div>
+</div>
+</article>
+<!-- Project 3: Premium Residential Gated Community Access Control -->
+<article class="bg-surface-container-low/80 backdrop-blur-md rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col card-top-light hover:border-primary/50 transition-all duration-200">
+<div class="relative h-56 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="State-of-the-art residential gatehouse access control checkpoint featuring sleek automated boom barriers, high-resolution night-vision ANPR license plate recognition cameras, and LED lane guides. Atmospheric dusk setting in an upscale development with deep carbon architecture and electric blue optical indicators." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2aIAbwxgMRO-HyGeJYg9sNB86_ceoBplFV1MmNWyItNiAgHJE2vTI5ywO2Uy6-Qlm5J51WyTSb7FNzGrRbh2Pzyl9VDcTYwhz5cJqB2IcMs2XfEM0LkXqJxUvduEYYj6n3TFEOfRAenwOQoYMhIalMauRG8TL0yw0rx-1QNEG7aXSFMz6oL6pRLtWqqcfH8te18KuDXrF8EE_klAECXmAGKDtYN1d2Bgs05Vj51cJ"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 px-2.5 py-1 rounded text-telemetry-code font-telemetry-code text-primary border border-primary/30 uppercase">
+            DHA Lahore
+          </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-telemetry-code font-telemetry-code text-on-surface-variant">
+            ANPR + Barrier Sync
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Residential Gated Community Access Control</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+              Autonomous vehicular and pedestrian screening gateway equipped with fast-scan RFID tags and instant guard-resident video intercoms.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<div class="text-label-sm font-label-sm text-primary font-semibold uppercase">Hardware Implemented:</div>
+<p class="text-body-sm font-body-sm text-on-surface mt-1">
+              Automated Boom Barriers, RFID Vehicle Tags, Night-Vision ANPR Cameras, Guard Master Intercoms, Cloud Logging Server.
+            </p>
+</div>
+</div>
+</article>
+<!-- Project 4: Corporate Headquarters Biometric & Turnstile Network -->
+<article class="bg-surface-container-low/80 backdrop-blur-md rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col card-top-light hover:border-primary/50 transition-all duration-200">
+<div class="relative h-56 w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High-end corporate lobby entrance with brushed stainless steel optical turnstiles and glass speed gates featuring futuristic facial recognition terminals with blue status rings. Polished slate flooring, refined corporate dark minimalism, and sharp geometric lighting creating an impenetrable defense atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6HfShu3BUIK9z538iya3EQBLAK-htUePAP-6q3ulzyybP7gQ4ywdQHTbMaUMV61ZFKhQjjU44P2SdNTASVxCN0YTlXOM9APkdUidslqErPzdDwpvGaxzkeTP7jljpYBH2uIf9rnX2LzWlEU7rN_S_y3ooNO9fKzNBem_DAZ6L1FZ46SVZH1sbYyHHY59VwyBFoLheaslzehWzd-v8wYZc0Bu3slzYpCvGuZKTe-Da"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 px-2.5 py-1 rounded text-telemetry-code font-telemetry-code text-primary border border-primary/30 uppercase">
+            Gulberg Corporate Center
+          </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-telemetry-code font-telemetry-code text-on-surface-variant">
+            Facial AI + Cloud HR
+          </div>
+</div>
+<div class="p-6 flex-1 flex flex-col justify-between">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Corporate HQ Biometric &amp; Turnstile Network</h3>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-2">
+              High-throughput pedestrian verification terminal linking live facial telemetry with corporate access permissions and biometric muster logs.
+            </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<div class="text-label-sm font-label-sm text-primary font-semibold uppercase">Hardware Implemented:</div>
+<p class="text-body-sm font-body-sm text-on-surface mt-1">
+              Multi-Door Optical Face Recognition, Centralized Time &amp; Attendance HR Sync, Magnetic Shear Locks, Emergency Fire Releases.
+            </p>
+</div>
+</div>
+</article>
+<!-- Project 5: High-Security Depots & Warehouse Surveillance (Span 2 on lg) -->
+<article class="bg-surface-container-low/80 backdrop-blur-md rounded-xl border border-outline-variant/30 overflow-hidden flex flex-col lg:col-span-2 card-top-light hover:border-primary/50 transition-all duration-200">
+<div class="grid grid-cols-1 md:grid-cols-2 h-full">
+<div class="relative h-64 md:h-full w-full overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Expansive logistics distribution depot and warehouse yard monitored by heavy-duty 36X laser PTZ speed dome cameras mounted on tall steel masts. Industrial evening lighting, high-contrast dark blue night sky, laser illumination vectors, and precision security sensor overlay accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA47Obyx10E3vWNKiNSdJ5FKKcHLN-6ySI9E5WiiYY0wULx5b3NPqq3GOYjzycZrcduVoLsKEncdDc6dRQsGWhQQnoCQe0clGiAndtY3dVAiXzvCT8X-NWz1R0JW4i5B9Qm3ZncC8pE3UL5tmo2raKelj1Z2mRwvmQaIYGvj1-TVy54UkMcfoVSqaWE3gkOqhszYllr9psw90PQrrhHwb___KLnhpvrv1go2SjMtbHi"/>
+<div class="absolute top-3 left-3 bg-surface-container-lowest/90 px-2.5 py-1 rounded text-telemetry-code font-telemetry-code text-primary border border-primary/30 uppercase">
+              Multan Road Distribution Hub
+            </div>
+<div class="absolute bottom-3 right-3 bg-surface-container-lowest/90 px-2 py-0.5 rounded text-telemetry-code font-telemetry-code text-on-surface-variant">
+              36X Laser Speed Domes
+            </div>
+</div>
+<div class="p-6 md:p-8 flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 text-telemetry-code font-telemetry-code text-primary uppercase mb-2">
+<span class="material-symbols-outlined text-sm">radar</span> Wide-Area Long-Range Tracking
+              </div>
+<h3 class="text-headline-md font-headline-md text-on-surface">High-Security Depots &amp; Warehouse Surveillance</h3>
+<p class="text-body-md font-body-md text-on-surface-variant mt-2 leading-relaxed">
+                Autonomous motion perimeter radar coupling with high-powered laser PTZs for ultra-long range zero-light verification across vast multi-acre logistics yards.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-outline-variant/20">
+<div class="text-label-sm font-label-sm text-primary font-semibold uppercase">Hardware Implemented:</div>
+<p class="text-body-sm font-body-sm text-on-surface mt-1">
+                Long-Range 36X Laser PTZ Cameras, Optical Line-Crossing Alert Triggers, Dual-ISP Remote Monitoring, Industrial POE Switches, Encrypted Failover Uplinks.
+              </p>
+</div>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- INSTANT DIRECT COMMUNICATION FAST-ACTION CARDS -->
+<section class="py-6 px-6 md:px-12 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Call Sales -->
+<a class="p-6 rounded-xl bg-surface-container-low/90 border border-outline-variant/40 hover:border-primary transition-all duration-200 flex items-center justify-between group" href="tel:+923021151122">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-primary/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">call</span>
+</div>
+<div>
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase">Direct Sales Line</div>
+<div class="text-headline-sm font-headline-sm text-on-surface font-bold tracking-tight mt-0.5">+92 302 1151122</div>
+<div class="text-telemetry-code font-telemetry-code text-primary mt-0.5">Commercial Proposals &amp; Estimates</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- Card 2: Call Tech Support -->
+<a class="p-6 rounded-xl bg-surface-container-low/90 border border-outline-variant/40 hover:border-primary transition-all duration-200 flex items-center justify-between group" href="tel:+923291141122">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-primary/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">hardware</span>
+</div>
+<div>
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase">Technical Support Desk</div>
+<div class="text-headline-sm font-headline-sm text-on-surface font-bold tracking-tight mt-0.5">+92 329 1141122</div>
+<div class="text-telemetry-code font-telemetry-code text-primary mt-0.5">Emergency Dispatch &amp; Debugging</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- Card 3: WhatsApp Channel -->
+<a class="p-6 rounded-xl bg-surface-container-low/90 border border-outline-variant/40 hover:border-primary transition-all duration-200 flex items-center justify-between group" href="https://wa.me/923021151122?text=Hello%20786%20Surveillance%20Solution%2C%20I%20am%20interested%20in%20your%20security%20products%20and%20services.%20Please%20provide%20more%20information." rel="noopener noreferrer" target="_blank">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high border border-primary/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">chat</span>
+</div>
+<div>
+<div class="text-label-sm font-label-sm text-on-surface-variant uppercase">Direct WhatsApp Channel</div>
+<div class="text-headline-sm font-headline-sm text-on-surface font-bold tracking-tight mt-0.5">+92 302 1151122</div>
+<div class="text-telemetry-code font-telemetry-code text-primary mt-0.5">Instant WhatsApp Inquiry</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- SPLIT CONTACT & CONSULTATION CENTER -->
+<section class="py-16 px-6 md:px-12 max-w-7xl mx-auto" id="consultation-form">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- LEFT COLUMN: CORPORATE COORDINATES & INTERACTIVE MAP SIMULATION (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<!-- Corporate Identity & Location Card -->
+<div class="bg-surface-container-low/80 backdrop-blur-md rounded-xl border border-outline-variant/40 p-6 md:p-8 card-top-light shadow-sm">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-xl">corporate_fare</span>
+<span class="font-telemetry-code text-telemetry-code text-primary uppercase">Corporate Headquarters</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface">786 Surveillance Solution (SMC-PVT) LTD</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">High-Grade Defense &amp; Enterprise Security Systems Integrator</p>
+<div class="mt-6 space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-lg">pin_drop</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Registered Facility</span>
+<span class="text-body-md font-body-md text-on-surface">Office No. 19, Ground Floor, Zam Zam Tower, H3, Johar Town, Lahore, Pakistan.</span>
+<span class="text-telemetry-code font-telemetry-code text-secondary block mt-0.5">Zone: Near Expo Centre &amp; Emporium Mall</span>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-lg">dialer_sip</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Dedicated Phone Lines</span>
+<div class="flex flex-col gap-1 mt-1">
+<a class="text-body-md font-body-md text-primary hover:underline font-semibold flex items-center gap-1" href="tel:+923021151122">
+                    Sales Hotline: +92 302 1151122
+                  </a>
+<a class="text-body-md font-body-md text-primary hover:underline font-semibold flex items-center gap-1" href="tel:+923291141122">
+                    Support Desk: +92 329 1141122
+                  </a>
+<span class="text-body-sm font-body-sm text-on-surface-variant">
+                    Additional Hotline: +92 311 1152345
+                  </span>
+</div>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-lg">alternate_email</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Direct Official Dispatch Email</span>
+<a class="text-body-md font-body-md text-primary hover:underline font-semibold" href="mailto:92@786securitysol.com">
+                  92@786securitysol.com
+                </a>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary mt-1 text-lg">schedule</span>
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase block">Operating &amp; Engineering Hours</span>
+<span class="text-body-sm font-body-sm text-on-surface">Monday – Saturday: 10:00 AM – 8:00 PM</span>
+<span class="text-telemetry-code font-telemetry-code text-secondary block mt-0.5">Sunday: Closed (Emergency On-Call Dispatch Active)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- HIGH-TECH GOOGLE MAP SIMULATION FOR ZAM ZAM TOWER JOHAR TOWN -->
+<div class="bg-surface-container-low/80 backdrop-blur-md rounded-xl border border-outline-variant/40 overflow-hidden card-top-light shadow-sm">
+<div class="p-4 border-b border-outline-variant/30 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base">explore</span>
+<span class="font-telemetry-code text-telemetry-code text-on-surface uppercase">Geospatial Target: Johar Town Grid</span>
+</div>
+<span class="font-telemetry-code text-telemetry-code text-primary bg-surface-container-high px-2 py-0.5 rounded">31.4697° N, 74.2728° E</span>
+</div>
+<div class="relative h-64 w-full bg-surface-container-highest overflow-hidden">
+<!-- Simulated Tactical Geospatial Map Visual -->
+<img class="w-full h-full object-cover" data-alt="A futuristic dark-mode tactical vector street map visualization centered on Johar Town Lahore showing neon blue road networks, arterial grid lines, high-tech navigational waypoint rings, and a glowing cyan destination pin marking Zam Zam Tower near Expo Centre. Pristine digital cartography." data-location="Lahore" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIyqEzq0LtYVSsdvvq8dflttwLGgbBpX9dHA9YWsSB1Lg0RTS8K4-2KSgLs2kiBpmt6oVoyayIfqR47l46fxsFmcK0-EgZ4_0lSKDYpzjkUz7f51Hdvy2P1n38k8oFlp_RUzFqXrclVWPILzg8UVtg3lSzJmFlhr5owAvu570ZDB-jqXOcEKip6KqKkSz744wCc8zIU1esP09Xcs6FceAOBZ5SwV8bfxY8s6nbxkG_"/>
+<!-- Map HUD Pin & Overlay -->
+<div class="absolute inset-0 bg-surface-container-lowest/30 pointer-events-none"></div>
+<div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="relative flex items-center justify-center">
+<span class="w-8 h-8 rounded-full bg-primary/20 animate-ping absolute"></span>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest border-2 border-primary flex items-center justify-center text-primary shadow-lg">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+</div>
+<div class="mt-2 bg-surface-container-lowest/95 backdrop-blur-md border border-primary/40 px-3 py-1.5 rounded-lg text-center shadow-lg">
+<div class="text-label-sm font-label-sm text-on-surface font-bold">Zam Zam Tower (H3)</div>
+<div class="text-telemetry-code font-telemetry-code text-primary">Office No. 19, Ground Floor</div>
+</div>
+</div>
+<!-- Direction Action Buttons -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between gap-2">
+<div class="bg-surface-container-lowest/90 px-2.5 py-1 rounded text-telemetry-code font-telemetry-code text-on-surface-variant border border-outline-variant/30 flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span>Near Emporium Mall &amp; Expo Centre</span>
+</div>
+<a class="bg-primary text-on-primary hover:brightness-110 px-3 py-1.5 rounded text-label-sm font-label-sm font-semibold flex items-center gap-1 transition-all shadow" href="https://maps.google.com/?q=Zam+Zam+Tower+Johar+Town+Lahore" rel="noopener noreferrer" target="_blank">
+<span>Directions</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low flex items-center justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span>Fastest Route: Via Canal Road or Khayaban-e-Firdousi</span>
+<span class="font-telemetry-code text-telemetry-code text-primary">Visitor Parking Available</span>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: PROFESSIONAL MULTI-FIELD SECURITY INQUIRY FORM (7 Cols) -->
+<div class="lg:col-span-7 bg-surface-container-low/90 backdrop-blur-md rounded-xl border border-outline-variant/40 p-6 md:p-10 card-top-light shadow-xl">
+<div class="border-b border-outline-variant/30 pb-6 mb-8">
+<div class="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-surface-container-high border border-outline-variant/50 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">assignment_turned_in</span>
+<span class="font-telemetry-code text-telemetry-code text-primary uppercase">On-Site Dispatch &amp; Quotation Engine</span>
+</div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Request a Site Inspection or Official Proposal</h2>
+<p class="text-body-md font-body-md text-on-surface-variant mt-1">
+            Immediate dispatch or CAD blueprint review by in-house Lahore engineers.
+          </p>
+</div>
+<form class="space-y-6" id="securityInquiryForm" onsubmit="event.preventDefault(); alert('Inquiry recorded. Lahore Technical Engineering Desk has logged your request.');">
+<!-- Inquiry Mode Radio Selection -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2">Inquiry Type / Priority</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<label class="flex items-center gap-3 p-3.5 rounded-lg bg-surface-container border border-outline-variant/40 cursor-pointer hover:border-primary/50 transition-colors">
+<input checked="" class="text-primary-container focus:ring-primary h-4 w-4 bg-surface-container-lowest border-outline-variant" name="inquiry_type" type="radio" value="survey"/>
+<div>
+<div class="text-label-md font-label-md text-on-surface">Request Free Site Survey Visit</div>
+<div class="text-telemetry-code font-telemetry-code text-on-surface-variant">Engineer on-site inspection in Lahore</div>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3.5 rounded-lg bg-surface-container border border-outline-variant/40 cursor-pointer hover:border-primary/50 transition-colors">
+<input class="text-primary-container focus:ring-primary h-4 w-4 bg-surface-container-lowest border-outline-variant" name="inquiry_type" type="radio" value="quotation"/>
+<div>
+<div class="text-label-md font-label-md text-on-surface">Request Technical Quotation</div>
+<div class="text-telemetry-code font-telemetry-code text-on-surface-variant">CAD drawings / itemized BOM pricing</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Name & Phone Fields -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2" for="fullName">
+                Full Name <span class="text-error">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/25 outline-none font-body-md transition-all" id="fullName" placeholder="e.g. Tariq Mahmood" required="" type="text"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2" for="phoneNumber">
+                Phone Number (+92 Format) <span class="text-error">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/25 outline-none font-body-md transition-all" id="phoneNumber" placeholder="+92 300 1234567" required="" type="tel"/>
+</div>
+</div>
+<!-- Email & City/District -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2" for="emailAddress">
+                Email Address <span class="text-error">*</span>
+</label>
+<input class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/25 outline-none font-body-md transition-all" id="emailAddress" placeholder="name@company.com" required="" type="email"/>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2" for="cityDistrict">
+                City / District
+              </label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary/25 outline-none font-body-md transition-all" id="cityDistrict">
+<option selected="" value="Lahore">Lahore (HQ Territory)</option>
+<option value="Sheikhupura">Sheikhupura</option>
+<option value="Faisalabad">Faisalabad</option>
+<option value="Kasur">Kasur</option>
+<option value="Other">Other (Punjab / Pakistan)</option>
+</select>
+</div>
+</div>
+<!-- Solution Category & Facility Type -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2" for="securitySolution">
+                Required Security Solution
+              </label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary/25 outline-none font-body-md transition-all" id="securitySolution">
+<option value="CCTV &amp; IP Surveillance">CCTV &amp; IP Surveillance</option>
+<option value="Biometric Access Control">Biometric Access Control</option>
+<option value="Electric Perimeter Fencing">Electric Perimeter Fencing</option>
+<option value="Video Door Phones / Intercoms">Video Door Phones / Intercoms</option>
+<option value="Metal Detection Arches">Metal Detection Arches</option>
+<option value="Complete Turnkey Security System">Complete Turnkey Security System</option>
+</select>
+</div>
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2" for="propertyType">
+                Property / Facility Type
+              </label>
+<select class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface focus:border-primary-container focus:ring-2 focus:ring-primary/25 outline-none font-body-md transition-all" id="propertyType">
+<option value="Residential Home/Villa">Residential Home/Villa</option>
+<option value="Commercial Plaza/Shop">Commercial Plaza/Shop</option>
+<option value="Industrial Factory">Industrial Factory</option>
+<option value="Corporate Office">Corporate Office</option>
+<option value="Educational/Medical Institution">Educational/Medical Institution</option>
+</select>
+</div>
+</div>
+<!-- Project Message / Scope Details -->
+<div>
+<label class="block text-label-sm font-label-sm text-on-surface-variant uppercase mb-2" for="projectMessage">
+              Project Message / Scope Details
+            </label>
+<textarea class="w-full px-4 py-3 rounded-lg bg-surface-container-lowest border border-outline-variant/50 text-on-surface placeholder:text-outline focus:border-primary-container focus:ring-2 focus:ring-primary/25 outline-none font-body-md transition-all" id="projectMessage" placeholder="Detail number of camera points, boundary wall length (in meters/feet), specific brand preferences (Hikvision/Dahua/ZK-Teco), or site readiness..." rows="4"></textarea>
+</div>
+<!-- Fast-Track WhatsApp Checkbox -->
+<div class="p-4 rounded-lg bg-surface-container-high/60 border border-outline-variant/30 flex items-start gap-3">
+<input class="mt-1 rounded bg-surface-container-lowest border-outline-variant text-primary focus:ring-primary h-4 w-4" id="whatsappFastTrack" type="checkbox"/>
+<label class="text-body-sm font-body-sm text-on-surface cursor-pointer select-none" for="whatsappFastTrack">
+<span class="font-semibold text-primary">Fast-Track Notification:</span> Send immediate quotation summary and engineering contact details directly to my WhatsApp (+92 number).
+            </label>
+</div>
+<!-- Submit CTA -->
+<div>
+<button class="w-full py-4 px-6 rounded-lg bg-primary-container text-on-primary-container font-headline-sm font-semibold hover:brightness-110 active:scale-98 transition-all duration-150 flex items-center justify-center gap-2 shadow-lg shadow-primary/20" type="submit">
+<span class="material-symbols-outlined text-2xl">verified</span>
+<span>Submit Security Inquiry &amp; Schedule Visit</span>
+</button>
+<div class="flex items-center justify-between text-telemetry-code font-telemetry-code text-on-surface-variant mt-3 px-1">
+<span>Encrypted Data Transmission</span>
+<span>Direct Lahore Engineering Dispatch</span>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- SHARED COMPONENT: Footer -->
+<footer class="bg-surface-container-lowest dark:bg-surface-container-lowest text-primary dark:text-primary docked full-width bottom border-t border-outline-variant/20 flat no shadows">
+<div class="w-full px-6 md:px-12 py-16 max-w-7xl mx-auto flex flex-col gap-12">
+<!-- Top Grid Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+<!-- Col 1 & 2: Entity & Mission -->
+<div class="lg:col-span-2 space-y-4">
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface dark:text-on-surface uppercase">
+            786 Surveillance Solution
+          </div>
+<p class="text-body-sm font-body-sm text-on-surface-variant max-w-md leading-relaxed">
+            Registered SMC-Private Limited entity specializing in high-grade defense, industrial telemetry, smart perimeter fencing, and unified IP CCTV surveillance architectures across Lahore and wider Punjab.
+          </p>
+<div class="space-y-1.5 pt-2 text-body-sm font-body-sm text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">apartment</span>
+<span>Office No. 19, Ground Floor, Zam Zam Tower, H3, Johar Town, Lahore.</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">call</span>
+<span>Sales: +92 302 1151122 | Support: +92 329 1141122</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-sm">mail</span>
+<span>92@786securitysol.com</span>
+</div>
+</div>
+</div>
+<!-- Col 3: Core Competencies -->
+<div class="space-y-3">
+<h4 class="text-label-md font-label-md font-bold text-on-surface tracking-wider uppercase">Security Solutions</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-150" href="#">CCTV Surveillance</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Biometric Access Control</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Electric Perimeter Fencing</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Remote Video Monitoring</a></li>
+</ul>
+</div>
+<!-- Col 4: Corporate Network -->
+<div class="space-y-3">
+<h4 class="text-label-md font-label-md font-bold text-on-surface tracking-wider uppercase">Regional Operations</h4>
+<ul class="space-y-2 text-body-sm font-body-sm text-on-surface-variant">
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Lahore HQ Johar Town</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="tel:+923021151122">Emergency Dispatch (+92)</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Technical Certifications</a></li>
+<li><a class="hover:text-primary transition-colors duration-150" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<!-- Col 5: Operating Readiness -->
+<div class="space-y-3">
+<h4 class="text-label-md font-label-md font-bold text-on-surface tracking-wider uppercase">NOC Operations</h4>
+<div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant/30 text-telemetry-code font-telemetry-code space-y-1">
+<div class="text-primary flex items-center gap-1.5 font-bold">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              SURVEILLANCE ACTIVE
+            </div>
+<div class="text-on-surface-variant">Mon – Sat: 10:00 - 20:00 PKT</div>
+<div class="text-secondary">Sunday: Standby Dispatch</div>
+</div>
+<a class="inline-flex items-center gap-2 text-label-sm font-label-sm text-primary hover:underline" href="https://wa.me/923021151122" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-sm">chat</span>
+<span>Direct WhatsApp Channel</span>
+</a>
+</div>
+</div>
+<!-- Bottom Legal Notice Row -->
+<div class="pt-8 border-t border-outline-variant/20 flex flex-col md:flex-row justify-between items-center gap-4 text-on-surface-variant text-body-sm font-body-sm">
+<p>© 2025 786 Surveillance Solution (SMC-PVT) LTD. Johar Town, Lahore. High-Grade Defense &amp; Enterprise Security Systems. All Rights Reserved.</p>
+<div class="flex items-center gap-6 font-telemetry-code text-telemetry-code">
+<span class="text-outline">PEC &amp; SECP REGISTERED INTEGRATOR</span>
+<span class="text-primary">ISO-STANDARDIZED QA</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- PERSISTENT FLOATING WHATSAPP INTERACTION WIDGET -->
+<aside class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+<a aria-label="Direct WhatsApp Consultation with 786 Surveillance Solution" class="group flex items-center gap-3 p-3.5 bg-surface-container-high/95 backdrop-blur-md border border-primary/40 rounded-full shadow-2xl hover:border-primary transition-all duration-200 hover:scale-105" href="https://wa.me/923021151122?text=Hello%20786%20Surveillance%20Solution%2C%20I%20am%20interested%20in%20your%20security%20products%20and%20services.%20Please%20provide%20more%20information." rel="noopener noreferrer" target="_blank">
+<div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-2xl font-bold">chat</span>
+</div>
+<div class="hidden sm:flex flex-col pr-3 text-left">
+<span class="font-telemetry-code text-telemetry-code text-primary uppercase">Direct Engineer Chat</span>
+<span class="text-label-md font-label-md text-on-surface font-semibold">+92 302 1151122</span>
+</div>
+</a>
+</aside>
+</body></html>
